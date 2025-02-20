@@ -113,17 +113,6 @@ def train_model(X_train, y_train):
 - Trains a CatBoost regressor on the provided dataset.
 - Saves the trained model to the `artifacts/` directory.
 
-## Deployment
-
-### **Using Docker**
-To containerize the application, use the provided `Dockerfile`:
-```bash
-docker build -t student-score-estimator .
-docker run -p 5000:5000 student-score-estimator
-```
-
-### **CI/CD Pipeline**
-A GitHub Actions workflow (`.github/workflows/ci-cd-pipeline.yml`) automates testing, building, and deploying the application.
 
 ## Results & Insights
 - **Model Performance**:
